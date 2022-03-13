@@ -1,0 +1,174 @@
+
+/* Arquivo CSS  com estilo padrão dos elementos de todas as paginas  */
+/*OBS: Nunca o slyle.css deve estar juntos com os codigo html estas devem estar sempre separado */
+* {
+    box-sizing: border-box;
+  }
+
+  html{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    font-size: 62.5%;  /*equivalente a 10px*/
+  }
+
+  body {
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif; 
+  } /*tipo de letra*/
+    body {
+      background-color: #b1b0a0; /*Tipo de cor do corpo da nossa homepage*/
+    }
+
+    label {
+         margin-bottom: 1rem;
+         font-size: 1.4rem;            /*mudar o negrito nos temas do formalario tamanho de letra cor*/
+         font-family: sans-serif;
+         font-weight: bolder;
+         color: rgb(4, 5, 10);                    /*cor dos textos */
+
+    }
+    input {
+        padding: 1rem;
+
+    }
+    h1, h2, h3 {
+      font-family: fantasy;
+      color: rgb(19, 16, 16);                   /*cor do link minhas atividades e minhas redes socias */
+    }
+
+    #primeiro-link a {      /*destacar o primeiro link da nossa homepage MINHAS ATIVIDADES*/
+      color: rgb(192, 74, 98);
+    }
+
+    ul {
+      background-color: rgb(248, 248, 250); /*Cor da barra de navegação Minhas atividades*/
+      font-size: 14px;
+    }
+
+    .navegacao {
+        background-color: rgb(2, 2, 19);
+    }
+
+    form div {
+        background: rgb(238, 230, 230);
+        border: 0;
+        border-bottom: 1px salid rgb(235, 255, 51);
+        bottom: -10px;
+
+
+     /*background: #fff;
+      border: 1px dashed #999;
+      margin: 10px 10px 10px 10px; 
+      padding: 10px;*/
+
+    }
+
+    [type="text"], [type="email"], textarea, label {
+        display: block;  
+        width: 100%;                              /*Display block é usado para quebrar as linhas*/
+        margin-bottom: 2px;
+    }
+
+    p {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*fonte da letra*/
+    }
+
+    ul li {
+      font-size: 0.9em; /*equivale a 16px*/
+      width: 100%;
+    }
+
+    p {
+      font-size: 1.6rem; /*tamanho de letra que equivale a 16px*/
+    }
+    a {
+      color: rgb(116, 31, 5); /*cor das perguntas no  link do formulario ex: Qual linguagem você prefere*/
+      text-decoration: none; /*para tirar os sublinhado dos links*/
+      font-size: 14px;  /*Mudar fonte das letras ex 12px, 15px */
+    }
+  header {
+    background-color: rgb(192, 194, 218);
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(196, 57, 57);
+  }
+
+  nav {
+    float: left;
+    width: 30%;
+     
+    background: rgb(148, 148, 98); /*cor do fundo do navegador localizado em minhas atividades*/
+    padding: 20px;
+  }
+
+  
+  nav ul {
+    list-style-type: none;
+    padding: 24px;
+    
+  }
+
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #fcfafa;
+  }
+
+  section::after {
+    background: rgb(26, 22, 22);
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  footer {
+    background-color: rgb(12, 8, 8);
+    padding: 10px;
+    text-align: center;
+    color: rgb(209, 202, 202);
+  }
+
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  
+  }    
+  /*POSICIONAMENTO DE ELEMENTOS AULA 5
+  top/ superior (para de cima do nosso Layout
+    bottom / inferior ( parte de baixo do layout
+    left(esquerda)
+    right / direita*/
+
+    form div {
+        top: 15%;    /*colocar linha nos texto do nosso formalario*/
+    }
+
+    label {
+      margin-top: -0px;
+      color: rgb(6, 6, 7); /*Pintar a titulos do formulario ex; nome, email, e outros*/
+    }
+
+    li a {
+      color: rgb(17, 14, 14); /*mudar as cores do links no formulario home, sobre, contato*/
+       font-size: 18px; /*mudar o tamanho da letra dos links Home, Sobre, Contato*/
+    }
+
+    h1 {
+      font-size: 18px;
+      color: black;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    div label {
+      display: block;
+      margin-bottom: 2px;
+    }
+    nav a:hover {
+      color: crimson;
+    }
+
